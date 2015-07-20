@@ -23,7 +23,7 @@ public class Generate {
         }
 
         Cluster cluster = CouchbaseCluster.create("localhost");
-        Bucket bucket = cluster.openBucket("default");
+        Bucket bucket = cluster.openBucket("esper", "Xig2eogh");
         bucket.upsert(RawJsonDocument.create("_test", json));
     }
 }
